@@ -146,6 +146,12 @@ kable_styling()
 ### Ejercicio 6 (25%)
 Con la función ```ggplot()``` del paquete [ggplot2](https://ggplot2.tidyverse.org/), genere un gráfico de barras que muestre la esperanza de vida de los siete países de Centroamérica. El gráfico debe tener un título, los nombres (o códigos) de los países bajo cada barra, los valores sobre las barras y etiquetas para los ejes x e y.
 ```{r}
+ ggplot(centro_america, aes(x=reorder(iso_a2, -lifeExp), y=lifeExp)) +
+   ggtitle("Esperanza de vida en Centroamérica") +
+   xlab("País") + 
+   ylab("Esperanza de vida (años)") +  
+   geom_col() +
+   geom_text(aes(label=lifeExp), vjust=-0.3, size=3.5)
 ```
 
 ### Ejercicio 7 (25%)
