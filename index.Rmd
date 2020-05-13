@@ -1,6 +1,6 @@
 ---
 title: "GF-0604 Procesamiento de datos geográficos<br>Laboratorio 03: R - Datos vectoriales 1"
-author: "Manuel Vargas"
+author: "Leandro Rodríguez Bolaños"
 date: "2020-05-11"
 output:
   html_document:
